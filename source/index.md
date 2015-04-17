@@ -1007,6 +1007,7 @@ $ curl http://miami-transit-api.herokuapp.com/api/Trains.json
 ```
 
 > Response: HTTP/1.1 200 OK
+
 ```json
 {
     "RecordSet": {
