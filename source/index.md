@@ -262,6 +262,31 @@ Direction |
 
 ## BusRoutes
 
+```shell
+$ curl http://miami-transit-api.herokuapp.com/api/BusRoutes.json?RouteID=31
+```
+
+> Response: HTTP/1.1 200 OK
+
+```json
+{
+    "RecordSet": {
+        "Record": {
+            "Airport": "F",
+            "Bike": "T",
+            "Metrorail": "T",
+            "RouteAlias": "31 Busway Local",
+            "RouteAliasLong": "BUSWAY LOCAL CUTLER BAY-DADELAND SO",
+            "RouteColor": "FF8080",
+            "RouteDescription": "South Dade Govt. Center, Southland Mall, South Miami-Dade Busway, SW 112 Ave. Park & Ride Lot, SW 168 St. Park & Ride Lot, SW 152 St. Park & Ride Lot, The Falls, Dadeland South Metrorail station",
+            "RouteID": "31",
+            "SortOrder": "31",
+            "Wheelchair": "T"
+        }
+    }
+}
+```
+
 List bus routes
 
 ### HTTP Request
@@ -290,6 +315,39 @@ SortOrder |
 RouteColor |
 ￼￼￼￼￼￼￼
 ## BusRouteService
+
+```shell
+curl http://miami-transit-api.herokuapp.com/api/BusRouteService.json?RouteID=31
+```
+
+> Response: HTTP/1.1 200 OK
+
+```json
+{
+    "RecordSet": {
+        "Record": [
+            {
+                "RouteID": "31",
+                "ServiceID": "WEEKDAY",
+                "ServiceName": "Weekday",
+                "ServiceOrder": "1"
+            },
+            {
+                "RouteID": "31",
+                "ServiceID": "SATURDAY",
+                "ServiceName": "Saturday",
+                "ServiceOrder": "7"
+            },
+            {
+                "RouteID": "31",
+                "ServiceID": "SUNDAY",
+                "ServiceName": "Sunday",
+                "ServiceOrder": "8"
+            }
+        ]
+    }
+}
+```
 
 List bus route service
 
