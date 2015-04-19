@@ -584,12 +584,49 @@
 </tbody></table>
 
 <h2 id="busrouteshape">BusRouteShape</h2>
+<pre><code class="highlight shell">curl http://miami-transit-api.herokuapp.com/api/BusRouteShape.json?ShapeID<span class="o">=</span>128540
+</code></pre>
+
+<blockquote>
+<p>Response: HTTP/1.1 200 OK</p>
+</blockquote>
+<pre><code class="highlight json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"RecordSet"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"Record"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"Latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.571729"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-80.36711"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"Latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.571586"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-80.367477"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"Latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.571516"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-80.367737"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"Latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.571464"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-80.367934"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"Latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.571425"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-80.368171"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"Latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.571364"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-80.368497"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
 <p>Latitude and longitude coordinates of a bus route shape</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET</code> <a href="http://miami-transit-api.herokuapp.com/api/BusRouteShape.json?ShapeID=">http://miami-transit-api.herokuapp.com/api/BusRouteShape.json?ShapeID=</a></p>
+<p><code class="prettyprint">GET</code> <a href="http://miami-transit-api.herokuapp.com/api/BusRouteShape.json?ShapeID=128540">http://miami-transit-api.herokuapp.com/api/BusRouteShape.json?ShapeID=128540</a></p>
 
 <h3 id="query-parameters-(required)">Query Parameters (Required)</h3>
 
@@ -624,12 +661,26 @@
 </tbody></table>
 
 <h2 id="busrouteshapesbyroute">BusRouteShapesByRoute</h2>
+<pre><code class="highlight shell">curl http://miami-transit-api.herokuapp.com/api/BusRouteShapesByRoute.json?RouteID<span class="o">=</span>31&amp;Dir<span class="o">=</span>northbound
+</code></pre>
+
+<blockquote>
+<p>Response: HTTP/1.1 200 OK</p>
+</blockquote>
+<pre><code class="highlight json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"RecordSet"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"Record"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"ShapeID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"128540"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
 <p>List of bus route shapes per route and service direction</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET</code> <a href="http://miami-transit-api.herokuapp.com/api/BusRouteShapesByRoute.json?RouteID=&amp;Dir=">http://miami-transit-api.herokuapp.com/api/BusRouteShapesByRoute.json?RouteID=&amp;Dir=</a></p>
+<p><code class="prettyprint">GET</code> <a href="http://miami-transit-api.herokuapp.com/api/BusRouteShapesByRoute.json?RouteID=31&amp;Dir=northbound">http://miami-transit-api.herokuapp.com/api/BusRouteShapesByRoute.json?RouteID=31&amp;Dir=northbound</a></p>
 
 <h3 id="query-parameters-(required)">Query Parameters (Required)</h3>
 
