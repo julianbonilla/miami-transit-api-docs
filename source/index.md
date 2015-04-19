@@ -372,11 +372,51 @@ ServiceOrder |
 
 ## BusRouteShape
 
+```shell
+curl http://miami-transit-api.herokuapp.com/api/BusRouteShape.json?ShapeID=128540
+```
+
+> Response: HTTP/1.1 200 OK
+
+
+```json
+{
+    "RecordSet": {
+        "Record": [
+            {
+                "Latitude": "25.571729",
+                "Longitude": "-80.36711"
+            },
+            {
+                "Latitude": "25.571586",
+                "Longitude": "-80.367477"
+            },
+            {
+                "Latitude": "25.571516",
+                "Longitude": "-80.367737"
+            },
+            {
+                "Latitude": "25.571464",
+                "Longitude": "-80.367934"
+            },
+            {
+                "Latitude": "25.571425",
+                "Longitude": "-80.368171"
+            },
+            {
+                "Latitude": "25.571364",
+                "Longitude": "-80.368497"
+            }
+        ]
+    }
+}
+```
+
 Latitude and longitude coordinates of a bus route shape
 
 ### HTTP Request
 
-`GET` [http://miami-transit-api.herokuapp.com/api/BusRouteShape.json?ShapeID=](http://miami-transit-api.herokuapp.com/api/BusRouteShape.json?ShapeID=)
+`GET` [http://miami-transit-api.herokuapp.com/api/BusRouteShape.json?ShapeID=128540](http://miami-transit-api.herokuapp.com/api/BusRouteShape.json?ShapeID=128540)
 
 ### Query Parameters (Required)
 
@@ -393,11 +433,27 @@ Longitude |
 
 ## BusRouteShapesByRoute
 
+```shell
+curl http://miami-transit-api.herokuapp.com/api/BusRouteShapesByRoute.json?RouteID=31&Dir=northbound
+```
+
+> Response: HTTP/1.1 200 OK
+
+```json
+{
+    "RecordSet": {
+        "Record": {
+            "ShapeID": "128540"
+        }
+    }
+}
+```
+
 List of bus route shapes per route and service direction
 
 ### HTTP Request
 
-`GET` [http://miami-transit-api.herokuapp.com/api/BusRouteShapesByRoute.json?RouteID=&Dir=](http://miami-transit-api.herokuapp.com/api/BusRouteShapesByRoute.json?RouteID=&Dir=)
+`GET` [http://miami-transit-api.herokuapp.com/api/BusRouteShapesByRoute.json?RouteID=31&Dir=northbound](http://miami-transit-api.herokuapp.com/api/BusRouteShapesByRoute.json?RouteID=31&Dir=northbound)
 
 ### Query Parameters (Required)
 
