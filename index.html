@@ -408,6 +408,29 @@
 </tbody></table>
 
 <h2 id="busroutes">BusRoutes</h2>
+<pre><code class="highlight shell"><span class="gp">$ </span>curl http://miami-transit-api.herokuapp.com/api/BusRoutes.json?RouteID<span class="o">=</span>31
+</code></pre>
+
+<blockquote>
+<p>Response: HTTP/1.1 200 OK</p>
+</blockquote>
+<pre><code class="highlight json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"RecordSet"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"Record"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Airport"</span><span class="p">:</span><span class="w"> </span><span class="s2">"F"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Bike"</span><span class="p">:</span><span class="w"> </span><span class="s2">"T"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Metrorail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"T"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"RouteAlias"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31 Busway Local"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"RouteAliasLong"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BUSWAY LOCAL CUTLER BAY-DADELAND SO"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"RouteColor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FF8080"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"RouteDescription"</span><span class="p">:</span><span class="w"> </span><span class="s2">"South Dade Govt. Center, Southland Mall, South Miami-Dade Busway, SW 112 Ave. Park &amp; Ride Lot, SW 168 St. Park &amp; Ride Lot, SW 152 St. Park &amp; Ride Lot, The Falls, Dadeland South Metrorail station"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"RouteID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"SortOrder"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Wheelchair"</span><span class="p">:</span><span class="w"> </span><span class="s2">"T"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
 <p>List bus routes</p>
 
@@ -482,6 +505,37 @@
 <p>￼￼￼￼￼￼￼</p>
 
 <h2 id="busrouteservice">BusRouteService</h2>
+<pre><code class="highlight shell">curl http://miami-transit-api.herokuapp.com/api/BusRouteService.json?RouteID<span class="o">=</span>31
+</code></pre>
+
+<blockquote>
+<p>Response: HTTP/1.1 200 OK</p>
+</blockquote>
+<pre><code class="highlight json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"RecordSet"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"Record"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"RouteID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ServiceID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WEEKDAY"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ServiceName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Weekday"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ServiceOrder"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"RouteID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ServiceID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SATURDAY"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ServiceName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Saturday"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ServiceOrder"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"RouteID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ServiceID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SUNDAY"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ServiceName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sunday"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ServiceOrder"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
 <p>List bus route service</p>
 
