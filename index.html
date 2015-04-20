@@ -715,12 +715,26 @@
 </tbody></table>
 
 <h2 id="busrouteshapesbytrip">BusRouteShapesByTrip</h2>
+<pre><code class="highlight shell">curl http://miami-transit-api.herokuapp.com/api/BusRouteShapesByTrip.json?TripID<span class="o">=</span>3407120
+</code></pre>
+
+<blockquote>
+<p>Response: HTTP/1.1 200 OK</p>
+</blockquote>
+<pre><code class="highlight json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"RecordSet"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"Record"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"ShapeID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"128828"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
 <p>Returns the Bus Route ShapeID for a specific TripID</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET</code> <a href="http://miami-transit-api.herokuapp.com/api/BusRouteShapesByTrip.json?TripID=">http://miami-transit-api.herokuapp.com/api/BusRouteShapesByTrip.json?TripID=</a></p>
+<p><code class="prettyprint">GET</code> <a href="http://miami-transit-api.herokuapp.com/api/BusRouteShapesByTrip.json?TripID=3407120">http://miami-transit-api.herokuapp.com/api/BusRouteShapesByTrip.json?TripID=3407120</a></p>
 
 <h3 id="query-parameters-(required)">Query Parameters (Required)</h3>
 
