@@ -470,11 +470,28 @@ ShapeID |
 
 ## BusRouteShapesByTrip
 
+
+```shell
+curl http://miami-transit-api.herokuapp.com/api/BusRouteShapesByTrip.json?TripID=3407120
+```
+
+> Response: HTTP/1.1 200 OK
+
+```json
+{
+    "RecordSet": {
+        "Record": {
+            "ShapeID": "128828"
+        }
+    }
+}
+```
+
 Returns the Bus Route ShapeID for a specific TripID
 
 ### HTTP Request
 
-`GET` [http://miami-transit-api.herokuapp.com/api/BusRouteShapesByTrip.json?TripID=](http://miami-transit-api.herokuapp.com/api/BusRouteShapesByTrip.json?TripID=)
+`GET` [http://miami-transit-api.herokuapp.com/api/BusRouteShapesByTrip.json?TripID=3407120](http://miami-transit-api.herokuapp.com/api/BusRouteShapesByTrip.json?TripID=3407120)
 
 ### Query Parameters (Required)
 
