@@ -765,12 +765,62 @@
 </tbody></table>
 
 <h2 id="busroutestops">BusRouteStops</h2>
+<pre><code class="highlight shell">curl http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID<span class="o">=</span>31&amp;Dir<span class="o">=</span>northbound
+</code></pre>
+
+<blockquote>
+<p>Response: HTTP/1.1 200 OK</p>
+</blockquote>
+<pre><code class="highlight json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"RecordSet"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"Record"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"Latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.571949"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-80.366648"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Sequence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"StopID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"StopName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SW 211 ST &amp; OP S DADE GOVT CTR"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"Latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.571376"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-80.368857"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Sequence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"StopID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3671"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"StopName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SW 211 ST &amp; OP # 10890"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"Latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.575762"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-80.372924"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Sequence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"StopID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3813"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"StopName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BUSWAY &amp; SW 112 AV"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"Latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.580496"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-80.368244"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Sequence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"StopID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"227"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"StopName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BUSWAY &amp; SW 200 ST"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"Latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.5903"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-80.36012"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Sequence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"StopID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3814"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"StopName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BUSWAY &amp; MARLIN DR"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+
+</span></code></pre>
 
 <p>Bus stops for a route and direction</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET</code> <a href="http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=&amp;Dir=">http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=&amp;Dir=</a></p>
+<p><code class="prettyprint">GET</code> <a href="http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=&amp;Dir=RouteID=31&amp;Dir=northbound">http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=31&amp;Dir=northbound</a></p>
 
 <h3 id="query-parameters-(required)">Query Parameters (Required)</h3>
 
