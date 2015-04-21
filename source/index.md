@@ -507,11 +507,64 @@ ShapeID |
 
 ## BusRouteStops
 
+```shell
+curl http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=31&Dir=northbound
+```
+
+> Response: HTTP/1.1 200 OK
+
+
+```json
+{
+    "RecordSet": {
+        "Record": [
+            {
+                "Latitude": "25.571949",
+                "Longitude": "-80.366648",
+                "Sequence": "1",
+                "StopID": "2",
+                "StopName": "SW 211 ST & OP S DADE GOVT CTR"
+            },
+            {
+                "Latitude": "25.571376",
+                "Longitude": "-80.368857",
+                "Sequence": "2",
+                "StopID": "3671",
+                "StopName": "SW 211 ST & OP # 10890"
+            },
+            {
+                "Latitude": "25.575762",
+                "Longitude": "-80.372924",
+                "Sequence": "3",
+                "StopID": "3813",
+                "StopName": "BUSWAY & SW 112 AV"
+            },
+            {
+                "Latitude": "25.580496",
+                "Longitude": "-80.368244",
+                "Sequence": "4",
+                "StopID": "227",
+                "StopName": "BUSWAY & SW 200 ST"
+            },
+            {
+                "Latitude": "25.5903",
+                "Longitude": "-80.36012",
+                "Sequence": "5",
+                "StopID": "3814",
+                "StopName": "BUSWAY & MARLIN DR"
+            }
+        ]
+    }
+}
+
+
+```
+
 Bus stops for a route and direction
 
 ### HTTP Request
 
-`GET` [http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=&Dir=](http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=&Dir=)
+`GET` [http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=31&Dir=northbound](http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=&Dir=RouteID=31&Dir=northbound)
 
 ### Query Parameters (Required)
 
