@@ -20,7 +20,7 @@ The first thing you will need is the API endpoint for this service.
 
 # Making Requests
 
-All endpoints use `HTTP GET`. The response format (`json` or `xml`) must be included in all request URLs.  The general URL structure is:
+All endpoints use `HTTP GET`. The response format (`json` or `xml`) can be specified in the URL. The default response is `json` if not specified. The general URL structure is:
 
 * **JSON**: `/api/{resource}.json?param=value`
 * **XML**: `/api/{resource}.xml?param=value`
@@ -86,7 +86,7 @@ $ curl http://miami-transit-api.herokuapp.com/api/Buses.json
 }
 ```
 
-Only provides data for buses _actively running trips_ on the following routes:
+Only provides data for buses _actively_ running trips on the following routes:
 
 * Route 34 Busway Flyer
 * Route 95 Dade‐Broward Express
@@ -1467,7 +1467,7 @@ DateUpdated |
 
 # City of Miami
 
-City of Miami provides a free trolley service in Allapattah, Biscayne, Brickell, Coral Way, Health District / Stadium and Overtown.
+City of Miami trolley service for Allapattah, Biscayne, Brickell, Coral Way, Health District / Stadium and Overtown.
 
 ## Trolley Vehicles
 
