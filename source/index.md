@@ -16,7 +16,7 @@ Welcome to the Miami Transit API documentation. This API provides transit data f
 
 The first thing you will need is the API endpoint for this service.
 
-* [http://miami-transit-api.herokuapp.com/api/](http://miami-transit-api.herokuapp.com/api/)
+* `http://miami-transit-api.herokuapp.com/api/`
 
 # Making Requests
 
@@ -1467,4 +1467,215 @@ DateUpdated |
 
 # City of Miami
 
-Trolley Service.  Coming soon.
+City of Miami provides a free trolley service in Allapattah, Biscayne, Brickell, Coral Way, Health District / Stadium and Overtown.
+
+## Trolley Vehicles
+
+```shell
+curl http://miami-transit-api.herokuapp.com/api/trolley/vehicles.json
+```
+
+> Response: HTTP/1.1 200 OK
+
+```json
+{
+    "get_vehicles": [
+        {
+            "equipmentID": "2001",
+            "inService": 0,
+            "lat": 25.788690567017,
+            "lng": -80.210739135742,
+            "minutesToNextStops": {},
+            "nextStopID": null,
+            "onSchedule": null,
+            "receiveTime": 1430400453000,
+            "routeID": 1,
+            "scheduleNumber": null
+        },
+        {
+            "equipmentID": "2002",
+            "inService": 0,
+            "lat": 25.794719696045,
+            "lng": -80.222869873047,
+            "minutesToNextStops": {},
+            "nextStopID": null,
+            "onSchedule": null,
+            "receiveTime": 1430400448000,
+            "routeID": 2,
+            "scheduleNumber": null
+        },
+        {
+            "equipmentID": "2003",
+            "inService": 0,
+            "lat": 25.811470031738,
+            "lng": -80.239212036133,
+            "minutesToNextStops": {},
+            "nextStopID": null,
+            "onSchedule": null,
+            "receiveTime": 1430400441000,
+            "routeID": 777,
+            "scheduleNumber": null
+        }
+    ]
+}
+
+```
+
+List all trolley vehicles with current location
+
+### HTTP Request
+
+`GET` [http://miami-transit-api.herokuapp.com/api/trolley/vehicles.json](http://miami-transit-api.herokuapp.com/api/trolley/vehicles.json)
+
+### Query Parameters (Optional)
+
+Parameter | Description
+--------- | -----------
+
+### Response Attributes
+
+Attribute | Description
+--------- | -----------
+equipmentID |
+inService |
+lat |
+lng |
+minutesToNextStops |
+nextStopID |
+onSchedule |
+receiveTime |
+routeID |
+scheduleNumber |
+
+## Trolley Stops
+
+```shell
+curl http://miami-transit-api.herokuapp.com/api/trolley/stops.json
+```
+
+> Response: HTTP/1.1 200 OK
+
+```json
+{
+    "get_stops": [
+        {
+            "id": 145,
+            "lat": 25.764499664307,
+            "lng": -80.192649841309,
+            "name": "10 St Metromover"
+        },
+        {
+            "id": 105,
+            "lat": 25.790969848633,
+            "lng": -80.214866638184,
+            "name": "16 St Med Center"
+        },
+        {
+            "id": 117,
+            "lat": 25.790700912476,
+            "lng": -80.215217590332,
+            "name": "16 St Med. Center"
+        },
+        {
+            "id": 139,
+            "lat": 25.766380310059,
+            "lng": -80.192436218262,
+            "name": "8 St Metromover"
+        },
+        {
+            "id": 251,
+            "lat": 25.76748085022,
+            "lng": -80.192031860352,
+            "name": "8th St Metromover"
+        }
+    ]
+}
+
+```
+
+List all trolley stop locations.
+
+### HTTP Request
+
+`GET` [http://miami-transit-api.herokuapp.com/api/trolley/stops.json](http://miami-transit-api.herokuapp.com/api/trolley/stops.json)
+
+### Query Parameters (Optional)
+
+Parameter | Description
+--------- | -----------
+
+### Response Attributes
+
+Attribute | Description
+--------- | -----------
+id |
+lat |
+lng |
+name |
+
+## Trolley Routes
+
+```shell
+curl http://miami-transit-api.herokuapp.com/api/trolley/routes.json
+```
+
+> Response: HTTP/1.1 200 OK
+
+```json
+{
+    "get_routes": [
+        {
+            "id": 6,
+            "name": "Biscayne",
+            "stops": [
+                "147",
+                "148",
+                "189",
+                "190",
+                "180"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Brickell",
+            "stops": [
+                "137",
+                "138",
+                "139",
+                "140",
+                "141"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Coral Way",
+            "stops": [
+                "470",
+                "471",
+                "472",
+                "473",
+                "474"
+            ]
+        }
+    ]
+}
+```
+
+List all trolley routes
+
+### HTTP Request
+
+`GET` [http://miami-transit-api.herokuapp.com/api/Buses.json](http://miami-transit-api.herokuapp.com/api/Buses.json)
+
+### Query Parameters (Optional)
+
+Parameter | Description
+--------- | -----------
+
+### Response Attributes
+
+Attribute | Description
+--------- | -----------
+id |
+name |
+stops |
