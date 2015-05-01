@@ -1593,7 +1593,7 @@ curl http://miami-transit-api.herokuapp.com/api/trolley/stops.json
 
 ```
 
-List all trolley stop locations.
+List all trolley stop locations
 
 ### HTTP Request
 
@@ -1665,7 +1665,7 @@ List all trolley routes
 
 ### HTTP Request
 
-`GET` [http://miami-transit-api.herokuapp.com/api/Buses.json](http://miami-transit-api.herokuapp.com/api/Buses.json)
+`GET` [http://miami-transit-api.herokuapp.com/api/trolley/routes.json](http://miami-transit-api.herokuapp.com/api/trolley/routes.json)
 
 ### Query Parameters (Optional)
 
