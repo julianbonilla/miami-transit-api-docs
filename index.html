@@ -55,7 +55,7 @@
 
 <h1 id="making-requests">Making Requests</h1>
 
-<p>All endpoints use <code class="prettyprint">HTTP GET</code>. The response format (<code class="prettyprint">json</code> or <code class="prettyprint">xml</code>) must be included in all request URLs.  The general URL structure is:</p>
+<p>All endpoints use <code class="prettyprint">HTTP GET</code>. The response format (<code class="prettyprint">json</code> or <code class="prettyprint">xml</code>) can be specified in the URL. The default response is <code class="prettyprint">json</code> if not specified. The general URL structure is:</p>
 
 <ul>
 <li><strong>JSON</strong>: <code class="prettyprint">/api/{resource}.json?param=value</code></li>
@@ -121,7 +121,7 @@
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<p>Only provides data for buses <em>actively running trips</em> on the following routes:</p>
+<p>Only provides data for buses <em>actively</em> running trips on the following routes:</p>
 
 <ul>
 <li>Route 34 Busway Flyer</li>
@@ -2924,7 +2924,7 @@
 
 <h1 id="city-of-miami">City of Miami</h1>
 
-<p>City of Miami provides a free trolley service in Allapattah, Biscayne, Brickell, Coral Way, Health District / Stadium and Overtown.</p>
+<p>City of Miami trolley service for Allapattah, Biscayne, Brickell, Coral Way, Health District / Stadium and Overtown.</p>
 
 <h2 id="trolley-vehicles">Trolley Vehicles</h2>
 <pre><code class="highlight shell">curl http://miami-transit-api.herokuapp.com/api/trolley/vehicles.json
