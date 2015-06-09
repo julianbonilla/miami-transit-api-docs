@@ -564,7 +564,7 @@ Bus stops for a route and direction
 
 ### HTTP Request
 
-`GET` [http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=31&Dir=northbound](http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=&Dir=RouteID=31&Dir=northbound)
+`GET` [http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=31&Dir=northbound](http://miami-transit-api.herokuapp.com/api/BusRouteStops.json?RouteID=31&Dir=northbound)
 
 ### Query Parameters (Required)
 
